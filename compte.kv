@@ -1,0 +1,64 @@
+MDScreen:
+	id: user
+	name: "compte"
+	MDFloatLayout:
+		MDIconButton:
+			icon: "chevron-left"
+			text_color: 1, 170/255, 23/255, 1
+			pos_hint: {"center_x": .1, "center_y": .8}
+			user_font_size: "40sp"
+			theme_text_color: "Custom"
+			on_press:
+				root.manager.transition.direction = "right"
+				root.manager.current = "main"
+				
+		MDLabel:
+			text: " Retour"
+			text_color: 1, 170/255, 23/255, 1
+			pos_hint: {"center_x": .67, "center_y": .8}
+			font_size: "20sp"
+			theme_text_color: "Custom"
+
+		MDCard:
+			pos_hint: {"center_x": .5, "center_y": .5}
+			size_hint: .9, .5
+			md_bg_color: 0, 0, 0, 1
+			radius: [32]
+			MDLabel:
+				text: " 'My TooList', Développé Par "
+				halign: "center"
+				pos_hint: {"center_y": .8}
+				theme_text_color: 'Custom'
+				text_color: 1, 1, 1, 1
+				font_style: 'H4'
+		MDLabel:
+			text: "Orpheric_Codeur"
+			halign: "center"
+			pos_hint: {"center_y": .55}
+			theme_text_color: 'Custom'
+			text_color: 1, 1, 1, 1
+			font_style: 'H5'
+		MDIconButton:
+			icon: 'facebook'
+			pos_hint: {"center_x": .3, "center_y": .4}
+			user_font_size: "40sp"
+			theme_text_color: 'Custom'
+			text_color: 1, 1, 1, 1
+			on_press:
+				print('Compte Facebook')
+		MDIconButton:
+			icon: 'instagram'
+			pos_hint: {"center_x": .5, "center_y": .4}
+			user_font_size: "40sp"
+			theme_text_color: 'Custom'
+			text_color: 1, 0, 0, 1
+			on_press:
+				print('Compte Instagram')
+		MDIconButton:
+			icon: 'twitter'
+			pos_hint: {"center_x": .7, "center_y": .4}
+			user_font_size: "40sp"
+			theme_text_color: 'Custom'
+			text_color: 0, 0, 1, 1
+			on_press:
+				print('Compte Twitter')

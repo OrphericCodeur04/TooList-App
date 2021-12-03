@@ -1,0 +1,40 @@
+# ECRAN PRINCIPALE D'ACCUEIL LORS DU DEMARRAGE DE L'APPLICATION
+MDScreen:
+	name: "accueil"
+	MDFloatLayout:
+		md_bg_color: 1, 170/255, 23/255, 1
+
+		MDIconButton:
+			icon: "mastodon"
+			size_hint: .26, .26
+			pos_hint: {"center_x": .5, "center_y": .52}
+			user_font_size: "110sp"
+			theme_text_color: "Custom"
+			text_color: 1, 0, 0, 1
+			canvas.before:
+				Color:
+					rgb: 1, 1, 1, 1
+				Ellipse:
+					size: 130, 130
+					pos: 110, 250
+
+	MDLabel:
+		text: "My TooList"
+		bold: True
+		font_style: "H4"
+		pos_hint: {'center_x': .5, 'center_y': .38}
+		halign: 'center'
+		theme_text_color: "Custom"
+		text_color: 1, 1, 1, 1
+		font_size: "35sp"
+		#font_name: "Poppins-SeniBold.ttf"
+
+	MDLabel:
+		text: "Building by Orpheric_Codeur"
+		bold: True
+		pos_hint: {'center_x': .5, 'center_y': .15}
+		halign: 'center'
+		theme_text_color: "Custom"
+		text_color: 1, 0, 0, 1
+		font_size: "25sp"
+		#font_name: "Poppins-SeniRegular.ttf"
