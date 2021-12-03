@@ -9,7 +9,7 @@ I use PHP for the administration of the backend side of a website and I use Pyth
 
 You will have the opportunity to learn more about me and my philosophy of work in Computer Programming, by following the projects that I will share here.
 
-On hearing, I welcome you. 😊
+ I welcome you. 😊
 
 Regards...
 
